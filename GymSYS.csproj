@@ -86,109 +86,110 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Booking.cs" />
-    <Compile Include="frmYearlyClassAnalysis.cs">
+    <Compile Include="Application_Frontend\toolStripMenu.cs" />
+    <Compile Include="Business_Logic\Booking.cs" />
+    <Compile Include="Application_Frontend\frmYearlyClassAnalysis.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmYearlyClassAnalysis.Designer.cs">
+    <Compile Include="Application_Frontend\frmYearlyClassAnalysis.Designer.cs">
       <DependentUpon>frmYearlyClassAnalysis.cs</DependentUpon>
     </Compile>
-    <Compile Include="Session.cs" />
-    <Compile Include="DBConnect.cs" />
-    <Compile Include="frmCancelBooking.cs">
+    <Compile Include="Business_Logic\Session.cs" />
+    <Compile Include="Database\DBConnect.cs" />
+    <Compile Include="Application_Frontend\frmCancelBooking.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCancelBooking.Designer.cs">
+    <Compile Include="Application_Frontend\frmCancelBooking.Designer.cs">
       <DependentUpon>frmCancelBooking.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCancelClass.cs">
+    <Compile Include="Application_Frontend\frmCancelClass.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCancelClass.Designer.cs">
+    <Compile Include="Application_Frontend\frmCancelClass.Designer.cs">
       <DependentUpon>frmCancelClass.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMakeBooking.cs">
+    <Compile Include="Application_Frontend\frmMakeBooking.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMakeBooking.Designer.cs">
+    <Compile Include="Application_Frontend\frmMakeBooking.Designer.cs">
       <DependentUpon>frmMakeBooking.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmScheduleClass.cs">
+    <Compile Include="Application_Frontend\frmScheduleClass.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmScheduleClass.Designer.cs">
+    <Compile Include="Application_Frontend\frmScheduleClass.Designer.cs">
       <DependentUpon>frmScheduleClass.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmTopUpMemberWallet.cs">
+    <Compile Include="Application_Frontend\frmTopUpMemberWallet.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmTopUpMemberWallet.Designer.cs">
+    <Compile Include="Application_Frontend\frmTopUpMemberWallet.Designer.cs">
       <DependentUpon>frmTopUpMemberWallet.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmUpdateClass.cs">
+    <Compile Include="Application_Frontend\frmUpdateClass.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmUpdateClass.Designer.cs">
+    <Compile Include="Application_Frontend\frmUpdateClass.Designer.cs">
       <DependentUpon>frmUpdateClass.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmUpdateMember.cs">
+    <Compile Include="Application_Frontend\frmUpdateMember.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmUpdateMember.Designer.cs">
+    <Compile Include="Application_Frontend\frmUpdateMember.Designer.cs">
       <DependentUpon>frmUpdateMember.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMainMenu.cs">
+    <Compile Include="Application_Frontend\frmMainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMainMenu.Designer.cs">
+    <Compile Include="Application_Frontend\frmMainMenu.Designer.cs">
       <DependentUpon>frmMainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmRegisterMember.cs">
+    <Compile Include="Application_Frontend\frmRegisterMember.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmRegisterMember.Designer.cs">
+    <Compile Include="Application_Frontend\frmRegisterMember.Designer.cs">
       <DependentUpon>frmRegisterMember.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmYearlyRevenueAnalysis.cs">
+    <Compile Include="Application_Frontend\frmYearlyRevenueAnalysis.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmYearlyRevenueAnalysis.Designer.cs">
+    <Compile Include="Application_Frontend\frmYearlyRevenueAnalysis.Designer.cs">
       <DependentUpon>frmYearlyRevenueAnalysis.cs</DependentUpon>
     </Compile>
-    <Compile Include="Member.cs" />
+    <Compile Include="Business_Logic\Member.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmCancelBooking.resx">
+    <EmbeddedResource Include="Application_Frontend\frmCancelBooking.resx">
       <DependentUpon>frmCancelBooking.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCancelClass.resx">
+    <EmbeddedResource Include="Application_Frontend\frmCancelClass.resx">
       <DependentUpon>frmCancelClass.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMakeBooking.resx">
+    <EmbeddedResource Include="Application_Frontend\frmMakeBooking.resx">
       <DependentUpon>frmMakeBooking.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmScheduleClass.resx">
+    <EmbeddedResource Include="Application_Frontend\frmScheduleClass.resx">
       <DependentUpon>frmScheduleClass.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmTopUpMemberWallet.resx">
+    <EmbeddedResource Include="Application_Frontend\frmTopUpMemberWallet.resx">
       <DependentUpon>frmTopUpMemberWallet.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmUpdateClass.resx">
+    <EmbeddedResource Include="Application_Frontend\frmUpdateClass.resx">
       <DependentUpon>frmUpdateClass.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmUpdateMember.resx">
+    <EmbeddedResource Include="Application_Frontend\frmUpdateMember.resx">
       <DependentUpon>frmUpdateMember.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMainMenu.resx">
+    <EmbeddedResource Include="Application_Frontend\frmMainMenu.resx">
       <DependentUpon>frmMainMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRegisterMember.resx">
+    <EmbeddedResource Include="Application_Frontend\frmRegisterMember.resx">
       <DependentUpon>frmRegisterMember.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmYearlyClassAnalysis.resx">
+    <EmbeddedResource Include="Application_Frontend\frmYearlyClassAnalysis.resx">
       <DependentUpon>frmYearlyClassAnalysis.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmYearlyRevenueAnalysis.resx">
+    <EmbeddedResource Include="Application_Frontend\frmYearlyRevenueAnalysis.resx">
       <DependentUpon>frmYearlyRevenueAnalysis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -227,5 +228,6 @@
   <ItemGroup>
     <Content Include="Resources\GymSysLogo.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

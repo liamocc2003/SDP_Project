@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs/GymSYS/FileContentIndex/1225a721-71e8-4da5-b8a5-05471e323099.vsidx
+/Database/DBConnect.cs
+.vs
+bin\

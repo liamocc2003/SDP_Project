@@ -141,17 +141,6 @@ C:\Users\liamo\Source\Repos\SDP_Project\bin\Debug\System.Text.Json.xml
 C:\Users\liamo\Source\Repos\SDP_Project\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\liamo\Source\Repos\SDP_Project\bin\Debug\System.ValueTuple.xml
 C:\Users\liamo\Source\Repos\SDP_Project\obj\Debug\GymSYS.csproj.AssemblyReference.cache
-C:\Users\liamo\Source\Repos\SDP_Project\obj\Debug\GymSYS.frmCancelBooking.resources
-C:\Users\liamo\Source\Repos\SDP_Project\obj\Debug\GymSYS.frmCancelClass.resources
-C:\Users\liamo\Source\Repos\SDP_Project\obj\Debug\GymSYS.frmMakeBooking.resources
-C:\Users\liamo\Source\Repos\SDP_Project\obj\Debug\GymSYS.frmScheduleClass.resources
-C:\Users\liamo\Source\Repos\SDP_Project\obj\Debug\GymSYS.frmTopUpMemberWallet.resources
-C:\Users\liamo\Source\Repos\SDP_Project\obj\Debug\GymSYS.frmUpdateClass.resources
-C:\Users\liamo\Source\Repos\SDP_Project\obj\Debug\GymSYS.frmUpdateMember.resources
-C:\Users\liamo\Source\Repos\SDP_Project\obj\Debug\GymSYS.frmMainMenu.resources
-C:\Users\liamo\Source\Repos\SDP_Project\obj\Debug\GymSYS.frmRegisterMember.resources
-C:\Users\liamo\Source\Repos\SDP_Project\obj\Debug\GymSYS.frmYearlyClassAnalysis.resources
-C:\Users\liamo\Source\Repos\SDP_Project\obj\Debug\GymSYS.frmYearlyRevenueAnalysis.resources
 C:\Users\liamo\Source\Repos\SDP_Project\obj\Debug\GymSYS.Properties.Resources.resources
 C:\Users\liamo\Source\Repos\SDP_Project\obj\Debug\GymSYS.csproj.GenerateResource.cache
 C:\Users\liamo\Source\Repos\SDP_Project\obj\Debug\GymSYS.csproj.CoreCompileInputs.cache

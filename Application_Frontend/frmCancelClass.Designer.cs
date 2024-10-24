@@ -264,6 +264,5 @@ namespace GymSYS.Application_Frontend
         private System.Windows.Forms.ToolStripMenuItem yearlyClassAnalysisToolStripMenuItem;
         private System.Windows.Forms.ComboBox cboClassId;
         private System.Windows.Forms.ComboBox cboBookings;
-        private readonly toolStripMenu _toolStripMenu;
     }
 }

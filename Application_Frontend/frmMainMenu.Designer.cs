@@ -34,9 +34,12 @@ namespace GymSYS.Application_Frontend
         {
             menuStrip1 = new MenuStrip();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMainMenu));
-            toolStripMenu menuStrip = new toolStripMenu(menuStrip1);
+            Form form = this;
+            toolStripMenu menuStrip = new toolStripMenu(menuStrip1, this);
+
             this.label1 = new System.Windows.Forms.Label();
             this.pboLogo = new System.Windows.Forms.PictureBox();
+
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pboLogo)).BeginInit();
             this.SuspendLayout();

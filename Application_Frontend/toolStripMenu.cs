@@ -9,7 +9,7 @@ namespace GymSYS.Application_Frontend
 {
     public class toolStripMenu
     {
-        public toolStripMenu(MenuStrip menuStrip1)
+        public toolStripMenu(MenuStrip menuStrip1, Form form)
         {
             var mnuMembers = new ToolStripMenuItem();
             var mnuRegisterMember = new ToolStripMenuItem();
@@ -61,6 +61,7 @@ namespace GymSYS.Application_Frontend
             mnuRegisterMember.Click += new System.EventHandler(mnuRegisterMember_Click);
             void mnuRegisterMember_Click(object sender, EventArgs e)
             {
+                form.Hide();
                 frmRegisterMember registerMember = new frmRegisterMember();
                 registerMember.ShowDialog();
             }
@@ -74,6 +75,7 @@ namespace GymSYS.Application_Frontend
             mnuUpdateMember.Click += new System.EventHandler(mnuUpdateMember_Click);
             void mnuUpdateMember_Click(object sender, EventArgs e)
             {
+                form.Hide();
                 frmUpdateMember updateMember = new frmUpdateMember();
                 updateMember.Show();
             }
@@ -86,6 +88,7 @@ namespace GymSYS.Application_Frontend
             mnuTopUpMemberWallet.Click += new System.EventHandler(mnuTopUpMemberWallet_Click);
             void mnuTopUpMemberWallet_Click(object sender, EventArgs e)
             {
+                form.Hide();
                 frmTopUpMemberWallet topUpMember = new frmTopUpMemberWallet();
                 topUpMember.Show();
             }
@@ -110,6 +113,7 @@ namespace GymSYS.Application_Frontend
             scheduleClassToolStripMenuItem.Click += new System.EventHandler(scheduleClassToolStripMenuItem_Click);
             void scheduleClassToolStripMenuItem_Click(object sender, EventArgs e)
             {
+                form.Hide();
                 frmScheduleClass scheduleClass = new frmScheduleClass();
                 scheduleClass.Show();
             }
@@ -122,6 +126,7 @@ namespace GymSYS.Application_Frontend
             updateClassToolStripMenuItem.Click += new System.EventHandler(updateClassToolStripMenuItem_Click);
             void updateClassToolStripMenuItem_Click(object sender, EventArgs e)
             {
+                form.Hide();
                 frmUpdateClass updateClass = new frmUpdateClass();
                 updateClass.Show();
             }
@@ -134,6 +139,7 @@ namespace GymSYS.Application_Frontend
             cancelClassToolStripMenuItem.Click += new System.EventHandler(cancelClassToolStripMenuItem_Click);
             void cancelClassToolStripMenuItem_Click(object sender, EventArgs e)
             {
+                form.Hide();
                 frmCancelClass cancelClass = new frmCancelClass();
                 cancelClass.Show();
             }
@@ -157,6 +163,7 @@ namespace GymSYS.Application_Frontend
             makeBookingToolStripMenuItem.Click += new System.EventHandler(makeBookingToolStripMenuItem_Click);
             void makeBookingToolStripMenuItem_Click(object sender, EventArgs e)
             {
+                form.Hide();
                 frmMakeBooking makeBooking = new frmMakeBooking();
                 makeBooking.Show();
             }
@@ -169,6 +176,7 @@ namespace GymSYS.Application_Frontend
             cancelBookingToolStripMenuItem.Click += new System.EventHandler(cancelBookingToolStripMenuItem_Click);
             void cancelBookingToolStripMenuItem_Click(object sender, EventArgs e)
             {
+                form.Hide();
                 frmCancelBooking cancelBooking = new frmCancelBooking();
                 cancelBooking.Show();
             }
@@ -192,6 +200,7 @@ namespace GymSYS.Application_Frontend
             yearlyRevenueAnalysisToolStripMenuItem.Click += new System.EventHandler(yearlyRevenueAnalysisToolStripMenuItem_Click);
             void yearlyRevenueAnalysisToolStripMenuItem_Click(object sender, EventArgs e)
             {
+                form.Hide();
                 frmYearlyRevenueAnalysis yearlyRevenueAnalysis = new frmYearlyRevenueAnalysis();
                 yearlyRevenueAnalysis.Show();
             }
@@ -201,9 +210,10 @@ namespace GymSYS.Application_Frontend
             yearlyClassAnalysisToolStripMenuItem.Name = "yearlyClassAnalysisToolStripMenuItem";
             yearlyClassAnalysisToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             yearlyClassAnalysisToolStripMenuItem.Text = "Yearly Class Analysis";
-            yearlyClassAnalysisToolStripMenuItem.Click += new System.EventHandler(yearlyClassAnalysisToolStripMenuItem_Click_1);
-            void yearlyClassAnalysisToolStripMenuItem_Click_1(object sender, EventArgs e)
+            yearlyClassAnalysisToolStripMenuItem.Click += new System.EventHandler(yearlyClassAnalysisToolStripMenuItem_Click);
+            void yearlyClassAnalysisToolStripMenuItem_Click(object sender, EventArgs e)
             {
+                form.Hide();
                 frmYearlyClassAnalysis yearlyClassAnalysis = new frmYearlyClassAnalysis();
                 yearlyClassAnalysis.Show();
             }

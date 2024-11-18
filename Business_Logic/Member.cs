@@ -17,6 +17,9 @@ namespace GymSYS.Business_Logic
         private int memberWallet;
         private int memberPoints;
 
+        //define sqlFunctions
+        private sqlConnection sqlConnection = new sqlConnection();
+
         public Member()
         {
             this.memberId = 10000;
@@ -119,9 +122,6 @@ namespace GymSYS.Business_Logic
 
         public void addMember()
         {
-            //conect to database
-            OracleConnection conn = new OracleConnection(DBConnect.oracledb);
-
             //define sql query
             String sqlQuery = "INSERT INTO MEMBERS VALUES (" +
                 this.memberId + ",'" +
@@ -135,13 +135,15 @@ namespace GymSYS.Business_Logic
                 this.memberPoints + ")";
 
             //execute query
-            OracleCommand cmd = new OracleCommand(sqlQuery, conn);
+            OracleConnection conn = new OracleConnection(DBConnect.oracledb);
             conn.Open();
+
+            OracleCommand cmd = new OracleCommand(sqlQuery, conn);
 
             cmd.ExecuteNonQuery();
 
             //close database
-            conn.Close();
+            sqlConnection.close_db(conn);
         }
 
         public void updateMember()
@@ -174,15 +176,14 @@ namespace GymSYS.Business_Logic
 
         public static int getNextMemberId()
         {
-            //conect to database
-            OracleConnection conn = new OracleConnection(DBConnect.oracledb);
-
             //define sql query
             String sqlQuery="SELECT MAX(Member_Id) FROM Members";
 
             //execute query
-            OracleCommand cmd = new OracleCommand(sqlQuery, conn);
+            OracleConnection conn = new OracleConnection(DBConnect.oracledb);
             conn.Open();
+
+            OracleCommand cmd = new OracleCommand(sqlQuery, conn);
 
             OracleDataReader dr = cmd.ExecuteReader();
 
@@ -199,7 +200,6 @@ namespace GymSYS.Business_Logic
                 nextId = dr.GetInt32(0) + 1;
             }
 
-            //close database
             conn.Close();
 
             return nextId;

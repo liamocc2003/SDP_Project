@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GymSYS.Database;
+using Oracle.ManagedDataAccess.Client;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +11,9 @@ namespace GymSYS.Application_Frontend
 {
     public class toolStripMenu
     {
+        private OracleConnection conStr = new OracleConnection(DBConnect.oracledb);
+        private sqlConnection sqlConnection = new sqlConnection();
+
         public toolStripMenu(MenuStrip menuStrip1, Form form)
         {
             var mnuMembers = new ToolStripMenuItem();
@@ -25,6 +30,9 @@ namespace GymSYS.Application_Frontend
             var analysisToolStripMenuItem = new ToolStripMenuItem();
             var yearlyRevenueAnalysisToolStripMenuItem = new ToolStripMenuItem();
             var yearlyClassAnalysisToolStripMenuItem = new ToolStripMenuItem();
+            var connectionToolStripMenuItem = new ToolStripMenuItem();
+            var currentConnectionToolStripMenuItem = new ToolStripMenuItem();
+            var changeConnectionToolStripMenuItem = new ToolStripMenuItem();
 
             // 
             // menuStrip1
@@ -33,7 +41,8 @@ namespace GymSYS.Application_Frontend
                 mnuMembers,
                 classesToolStripMenuItem,
                 bookingsToolStripMenuItem,
-                analysisToolStripMenuItem
+                analysisToolStripMenuItem,
+                connectionToolStripMenuItem
             });
             menuStrip1.LayoutStyle = ToolStripLayoutStyle.HorizontalStackWithOverflow;
             menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -216,6 +225,54 @@ namespace GymSYS.Application_Frontend
                 form.Hide();
                 frmYearlyClassAnalysis yearlyClassAnalysis = new frmYearlyClassAnalysis();
                 yearlyClassAnalysis.Show();
+            }
+            //
+            // connectionToolStripMenuItem
+            //
+            connectionToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] {
+                currentConnectionToolStripMenuItem,
+                changeConnectionToolStripMenuItem
+            });
+            connectionToolStripMenuItem.Name = "connectionToolStripMenuItem";
+            connectionToolStripMenuItem.Size = new System.Drawing.Size(200, 20);
+            connectionToolStripMenuItem.Text = "Connection";
+            connectionToolStripMenuItem.Alignment = ToolStripItemAlignment.Right;
+            //
+            // currentConnectionToolStripMenuItem
+            //
+            currentConnectionToolStripMenuItem.Name = "currentConnectionToolStripMenuItem";
+            currentConnectionToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            currentConnectionToolStripMenuItem.Text = "Current Connection";
+            currentConnectionToolStripMenuItem.Click += new System.EventHandler(currentConnectionToolStripMenuItem_Click);
+            void currentConnectionToolStripMenuItem_Click(object sender, EventArgs e)
+            {
+                string message = sqlConnection.get_db_status(conStr);
+                string title = "Current Connection Status";
+                MessageBoxButtons button = MessageBoxButtons.OK;
+                MessageBoxIcon icon = MessageBoxIcon.Information;
+
+                MessageBox.Show("Connection is " + message, title, button, icon);
+            }
+            //
+            // changeConnectionToolStripMenuItem
+            //
+            changeConnectionToolStripMenuItem.Name = "changeConnectionToolStripMenuItem";
+            changeConnectionToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            changeConnectionToolStripMenuItem.Text = "Change Connection";
+            changeConnectionToolStripMenuItem.Click += new System.EventHandler(changeConnectionToolStripMenuItem_Click);
+            void changeConnectionToolStripMenuItem_Click(object sender, EventArgs e)
+            {
+                string connectionState = sqlConnection.get_db_status(conStr);
+                if (connectionState == "Closed")
+                {
+                    sqlConnection.connect_db(conStr);
+                    MessageBox.Show("Connected");
+                }
+                else
+                {
+                    sqlConnection.close_db(conStr);
+                    MessageBox.Show("Disconnected");
+                }
             }
         }
     }

@@ -1,4 +1,6 @@
 ﻿
+using GymSYS.Database;
+using Oracle.ManagedDataAccess.Client;
 using System.Windows.Forms;
 
 namespace GymSYS.Application_Frontend

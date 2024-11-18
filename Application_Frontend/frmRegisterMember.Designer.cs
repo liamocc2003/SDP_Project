@@ -1,4 +1,6 @@
 ﻿
+using GymSYS.Database;
+using Oracle.ManagedDataAccess.Client;
 using System.Windows.Forms;
 
 namespace GymSYS.Application_Frontend
@@ -31,7 +33,6 @@ namespace GymSYS.Application_Frontend
         /// </summary>
         private void InitializeComponent()
         {
-
             menuStrip1 = new MenuStrip();
             Form form = this;
             toolStripMenu menuStrip = new toolStripMenu(menuStrip1, this);

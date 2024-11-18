@@ -157,6 +157,7 @@
       <DependentUpon>frmYearlyRevenueAnalysis.cs</DependentUpon>
     </Compile>
     <Compile Include="Business_Logic\Member.cs" />
+    <Compile Include="Database\sqlConnection.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Application_Frontend\frmCancelBooking.resx">

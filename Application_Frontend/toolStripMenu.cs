@@ -266,12 +266,10 @@ namespace GymSYS.Application_Frontend
                 if (connectionState == "Closed")
                 {
                     sqlConnection.connect_db(conStr);
-                    MessageBox.Show("Connected");
                 }
                 else
                 {
                     sqlConnection.close_db(conStr);
-                    MessageBox.Show("Disconnected");
                 }
             }
         }

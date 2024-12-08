@@ -158,3 +158,10 @@ C:\Users\liamo\Source\Repos\SDP_Project\obj\Debug\GymSYS.Application_Frontend.fr
 C:\Users\liamo\Source\Repos\SDP_Project\obj\Debug\GymSYS.Application_Frontend.frmRegisterMember.resources
 C:\Users\liamo\Source\Repos\SDP_Project\obj\Debug\GymSYS.Application_Frontend.frmYearlyClassAnalysis.resources
 C:\Users\liamo\Source\Repos\SDP_Project\obj\Debug\GymSYS.Application_Frontend.frmYearlyRevenueAnalysis.resources
+C:\Users\liamo\Source\Repos\SDP_Project\bin\Debug\Castle.Core.dll
+C:\Users\liamo\Source\Repos\SDP_Project\bin\Debug\Moq.dll
+C:\Users\liamo\Source\Repos\SDP_Project\bin\Debug\nunit.framework.dll
+C:\Users\liamo\Source\Repos\SDP_Project\bin\Debug\nunit.framework.legacy.dll
+C:\Users\liamo\Source\Repos\SDP_Project\bin\Debug\Castle.Core.xml
+C:\Users\liamo\Source\Repos\SDP_Project\bin\Debug\nunit.framework.xml
+C:\Users\liamo\Source\Repos\SDP_Project\bin\Debug\nunit.framework.legacy.xml
